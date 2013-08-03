@@ -1,0 +1,19 @@
+<VirtualHost *:80>
+
+        DocumentRoot /var/www/joomla-cms
+
+        <Directory /var/www/joomla-cms>
+                Options Indexes FollowSymLinks MultiViews
+                AllowOverride All
+                Order allow,deny
+                allow from all
+        </Directory>
+
+        ServerAdmin webmaster@localhost
+
+        LogLevel debug
+
+        ErrorLog /vagrant/build/logs/vagrant-apache-error.log
+
+        CustomLog /vagrant/build/logs/vagrant-apache-access.log combined
+</VirtualHost>
