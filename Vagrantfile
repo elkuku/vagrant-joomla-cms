@@ -1,5 +1,6 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "wheezy64"
+  config.vm.box = "debian-70rc1-64"
+  config.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/debian-70rc1-x64-vbox4210.box"
   config.vm.provision :puppet do |puppet|
     puppet.manifests_path = "build/puppet/manifests"
     module_path = "build/puppet/modules"
