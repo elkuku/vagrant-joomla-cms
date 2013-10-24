@@ -1,8 +1,8 @@
 <VirtualHost *:80>
 
-        DocumentRoot /var/www/joomla-cms
+        DocumentRoot /home/vagrant/server/htdocs/joomla-cms
 
-        <Directory /var/www/joomla-cms>
+        <Directory /home/vagrant/server/htdocs/joomla-cms>
                 Options Indexes FollowSymLinks MultiViews
                 AllowOverride All
                 Order allow,deny
