@@ -21,3 +21,8 @@ This will setup a basic Vagrant box including:
 
 #### Credentials
 * **MySQL** User: `root` Password: `` (no password)
+
+#### Joomla! Versions
+
+* The `master` branch contains Joomla! 3.1.5 stable
+* The `php55` branch contains the Joomla! master
