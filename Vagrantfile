@@ -1,5 +1,6 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "wheezy64"
+  config.vm.box = "wheezy-72-64-vb-43"
+  config.vm.box_url = "https://dl.dropboxusercontent.com/u/197673519/debian-7.2.0.box"
   config.vm.provision :puppet do |puppet|
     puppet.manifests_path = "build/puppet/manifests"
     module_path = "build/puppet/modules"
